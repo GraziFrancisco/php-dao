@@ -40,11 +40,19 @@ require_once("config.php");
 
 //EDITANDO UM USUARIO
 
+//$usuario = new Usuario();
+//$usuario->loadById(10);
+
+//$usuario->update("GraziLinda", "123456");
+
+//echo $usuario;
+
+
+//DELETANDO UM USUARIO
+
 $usuario = new Usuario();
 $usuario->loadById(10);
-
-$usuario->update("GraziLinda", "123456");
-
+$usuario->delete();
 echo $usuario;
 
 
